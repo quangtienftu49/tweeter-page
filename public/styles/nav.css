@@ -19,7 +19,6 @@ nav {
 }
 
 .write-tweet {
-  display: flex;
   flex-direction: column;
 }
 

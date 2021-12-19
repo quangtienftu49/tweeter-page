@@ -1,6 +1,6 @@
 header .avatar {
-  height: 400px;
-  width: fit-content;
+  height: fit-content;
+  /* width: fit-content; */
   display: flex;
   flex-direction: column;
   align-items: center;

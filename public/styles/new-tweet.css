@@ -1,3 +1,7 @@
+section.new-tweet {
+    display: none;
+  }
+
 form  .new-tweet {
   display: flex;
   flex-direction: column;
@@ -39,4 +43,22 @@ textarea:focus {
   justify-content: space-between;
   font-size: 1.1em;
   font-family: "Bungee", sans-serif;
+}
+
+.error-line {
+  display: flex;
+}
+
+.submit-error, .p-placeholder {
+  margin: 0;
+}
+
+.submit-error {
+  color: red;
+  font-size: 0.9em;
+  display: none;
+}
+
+.placeholder {
+  visibility: hidden;
 }

@@ -10,35 +10,8 @@ $(document).ready(function() {
     tweetSubmit();
     writeToggle();
   });
-  
-  const data = [
-    {
-      "user": {
-        "name": "Newton",
-        "avatars": "https://i.imgur.com/73hZDYK.png"
-        ,
-        "handle": "@SirIsaac"
-      },
-      "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-      "created_at": 1461116232227
-    },
-    {
-      "user": {
-        "name": "Descartes",
-        "avatars": "https://i.imgur.com/nlhLi3I.png",
-        "handle": "@rd" },
-      "content": {
-        "text": "Je pense , donc je suis"
-      },
-      "created_at": 1461113959088
-    }
-  ]
 
   const createTweetElement = function(tweetObj) {
-    const $tweet = $(`<article class="tweet">Hello world</article>`);
-
     const userAvatar = $('<img>').addClass('tweet-avatar').attr('src', tweetObj.user.avatars);
     const userName = $('<span>').addClass('tweet-name').text(tweetObj.user.name);
     const headerDivLeft = $('<div>').addClass('header-left').append(userAvatar, userName);
@@ -84,16 +57,16 @@ $(document).ready(function() {
       const $tweetText = $('#tweet-text :input').val();
       // Error message for invalid submission
       if ($tweetText.length < 1) {
-        if ($('.submit-error').text() !== 'Please tweet something') {
+        if ($('.submit-error').text() !== 'Please write something!') {
           $('.submit-error').hide().text('');
         }
-        return $('.submit-error').text('Please tweet something').slideDown(750);
+        return $('.submit-error').text('Please write something!').slideDown(750);
       }
       if ($tweetText.length > 140) {
-        if ($('.submit-error').text() !== 'Tweet too long') {
+        if ($('.submit-error').text() !== 'Tweet exceeds 140 characters.') {
           $('.submit-error').hide().text('');
         }
-        return $('.submit-error').text('Tweet too long').slideDown(750);
+        return $('.submit-error').text('Tweet exceeds 140 characters.').slideDown(750);
       }
       // Hide error message for valid submission
       $('.submit-error').hide();
@@ -124,4 +97,12 @@ $(document).ready(function() {
   };
 
   loadTweets();
+
+  // Show Compose tweet from nav bar
+  const writeToggle = function() {
+    $('.write-tweet').click(function() {
+      $('section.new-tweet').slideToggle('slow');
+      $('.new-tweet textarea').focus();
+    });
+  };
 });

@@ -18,10 +18,6 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-family: "Source Sans Pro", sans-serif;
-
-  font-size: 24px;
-  display: flex;
-  flex-direction: column;
 }
 
 
@@ -29,112 +25,140 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-main {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-section.new-tweet {
-  margin: 0 4em 2em 4em;
-  display:flex;
-  flex-direction: column;
-}
-
-article.old-tweet {
-  margin: 0 4em 2em 4em;
-  display:flex;
-  flex-direction: column;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #244751;
-  padding: 0.4em;
-}
-article.old-tweet:hover {
-  box-shadow: 3px 4px 8px 2px #4056A1;
-}
-
-header.old-tweet,footer.old-tweet{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-p.old-tweet{
-  border-style: none;
-  border-bottom: solid;
-  border-color: #5a051f;
-}
-
-.header-left {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-right {
-  color: lightgrey;
-}
-footer.old-tweet {
-  font-size: 12px;
-}
-.footer-right i:hover {
-  color: #1f701f;
-}
-nav {
-  background: silver;
-  position: sticky;    
-}
-
-
-/* Tablet Styles */
-@media only screen and (min-width: 768px) {
-  .feature {
-    width: 33.3%;
-    line-height: 600px;
+ @media only screen and (min-width: 420px) {
+  body {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .content {
-    width: 66.7%;
-    float: right
+  main {
+    width: 100%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  section.new-tweet {
+    margin: 0 4em 2em 4em;
+    display:flex;
+    flex-direction: column;
+  }
+  article.old-tweet {
+    margin: 0 4em 2em 4em;
+    display:flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #0a6902;
+    padding: 0.4em;
+  }
+  article.old-tweet:hover {
+    box-shadow: 3px 4px 8px 2px #9b0202;
   }
 
-  .footer {
-    clear: right;
+  header.old-tweet,footer.old-tweet{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
-}
-
-/* Desktop styles */
-@media only screen and (min-width: 1024px) {
-  .hero {
-    width: 33.3%;
-    float: left;
+  p.old-tweet{
+    border-style: none;
+    border-bottom: solid;
+    border-color: #0b5a00;
   }
-
-  .feature {
-    line-height: 300px;
-  }
-
-  .menu {
-    background-color: #111111;
-    color: #f0f0f0;
-    text-align: left;
+ 
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .tagline {
-    display: inline;
-    font-style: italic;
-    font-weight: normal;
+  .header-right {
+    color: lightgrey;
+  }
+  footer.old-tweet {
     font-size: 12px;
-    color: tomato;
-    float: right;
+  }
+  .footer-right i:hover {
+    color: #be2600;
+  }
+  nav {
+    /* backgrou nd: silver; */
+    position: sticky;    
+  }
+ }
+
+
+ @media only screen and (min-width: 1024px) {
+  body {
+    font-size: 22px;
+    flex-direction: row;
   }
 
-  .main {
-    max-width: 1024px;
-    font-size: 16px;
-    margin: 0 auto;
+  header.avatar {
+    width: 33vw;
+    margin: 6em 2em;
   }
-}
+
+  main {
+    align-items: stretch;
+    width: 67vw;
+    margin: 6em 1em;
+    margin-right: 2em;
+  }
+
+  section.new-tweet {
+    margin: 0 4em 2em 4em;
+    display:flex;
+    flex-direction: column;
+  }
+  article.old-tweet {
+    margin: 0 4em 2em 4em;
+    display:flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #0a6902;
+    padding: 0.4em;
+  }
+  article.old-tweet:hover {
+    box-shadow: 3px 4px 8px 2px #9b0202;
+  }
+
+  header.old-tweet, footer.old-tweet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p.old-tweet{
+    border-style: none;
+    border-bottom: solid;
+    border-color: #0b5a00;
+  }
+ 
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-right {
+    color: lightgrey;
+  }
+  footer.old-tweet {
+    font-size: 14px;
+  }
+  
+  .footer-right i:hover {
+    color: #be2600;
+  }
+  nav {
+    position: fixed;  
+  }
+};

@@ -45,17 +45,20 @@
       </div>
     </nav>
 
-    <header>
+    <header class="avatar">
+      <br>
       <div class="avatar">
-          <img src="/images/profile-hex.png"> 
-          <h1><strong>TOM</strong> HANKS</h1>
+        <br>
+        <br>
+        <img src="/images/profile-hex.png"> 
+        <h1>TOM HANKS</h1>
       </div>
     </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <!-- <h2>Compose Tweet</h2> -->
         <form class="new-tweet" action="/tweets" method="POST" id="tweet-text">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
@@ -65,7 +68,7 @@
           </div>
           <div class="error-line">
             <p class="submit-error"></p>
-            <p class="p-placeholder">Placeholder</p>
+            <p class="placeholder">Placeholder</p>
           </div>
         </form>
       </section>
