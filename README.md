@@ -6,9 +6,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 # Screenshots
 
-![Screenshot1](https://github.com/quangtienftu49/tweeter-tien/tree/master/screenshots/shot1.png)
-![Screenshot2](https://github.com/quangtienftu49/tweeter-tien/tree/master/screenshots/shot2.png)
-![Screenshot3](https://github.com/quangtienftu49/tweeter-tien/tree/master/screenshots/shot3.png)
+![Screenshot1](https://github.com/quangtienftu49/tweeter-tien/blob/master/screenshots/shot1.png)
+![Screenshot2](https://github.com/quangtienftu49/tweeter-tien/blob/master/screenshots/shot2.png)
+![Screenshot3](https://github.com/quangtienftu49/tweeter-tien/blob/master/screenshots/shot3.png)
 
 ## Getting Started
 
